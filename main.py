@@ -11,7 +11,7 @@ def view_samples(samples,m,n):
     for ax, img in zip(axes.flatten(),samples):
         ax.xaxis.set_visible(False)
         ax.yaxis.set_visible(False)
-        im = ax.imshow(1-img.reshape((5,5)), cmap='Grey_r')
+        im = ax.imshow(1-img.reshape((5,5)), cmap='Greys_r')
     return fig, axes
 
 faces = [np.array([0,0,0,0,0,
